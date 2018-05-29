@@ -20,11 +20,12 @@ answerNum %2 == 0  ? document.write(" BTW You choose an even number") : document
 
 document.write("\n")
 let answerLang = prompt("What is your favorite language?")
-let kindness = answerLang.valueOf()
-if (kindness = "javascript"  ) {
+let smallans = answerLang.toLowerCase()
+console.log(smallans)
+if (smallans == "javascript") {
   document.write(`I love Javascript`);
 }
-else if (kindness = "php") {
+else if (smallans == "php") {
   document.write (`I kinda not love PHP`);
 }
 else {
